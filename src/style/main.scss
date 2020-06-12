@@ -1,0 +1,47 @@
+.navbar-item {
+  img {
+    max-height: 3rem;
+  }
+}
+#techs {
+  animation: rotate 10s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#techs > * {
+  animation: inherit;
+  animation-direction: reverse;
+  transform-origin: inherit;
+  transform-box: inherit;
+}
+#moving-objects {
+  animation: scale 15s infinite;
+  transform-origin: center;
+}
+#certel {
+  animation: action 1s infinite alternate;
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}

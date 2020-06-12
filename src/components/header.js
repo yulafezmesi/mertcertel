@@ -1,35 +1,46 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+import PropTypes from "prop-types"
+
+const Header = ({ siteTitle }) => {
+  const [active, setActive] = useState(false)
+  return (
+    <div className="container">
+      <header>
+        <nav className="navbar " role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+              <img src="/svg/logo.svg" />
+            </a>
+            <a
+              role="button"
+              onClick={() => setActive(!active)}
+              className={
+                active
+                  ? "navbar-burger burger is-active"
+                  : "navbar-burger burger"
+              }
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div className={active ? "navbar-menu is-active" : "navbar-menu"}>
+            <div className="navbar-start"></div>
+            <div className="navbar-end">
+              <a className="navbar-item">Home</a>
+              <a className="navbar-item">Documentation</a>
+            </div>
+          </div>
+        </nav>
+      </header>
     </div>
-  </header>
-)
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
