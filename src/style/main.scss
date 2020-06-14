@@ -1,3 +1,4 @@
+@import "command-line.scss";
 .navbar-item {
   img {
     max-height: 3rem;
@@ -14,13 +15,47 @@
   transform-origin: inherit;
   transform-box: inherit;
 }
+#certel {
+  &:hover {
+    cursor: pointer;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+
+    #right-eye {
+      transform: scale(0);
+      transform-origin: bottom;
+      transform-box: fill-box;
+    }
+    #eyes-open {
+      transform: scale(1);
+      transform-origin: bottom;
+      transform-box: fill-box;
+    }
+  }
+}
 #moving-objects {
-  animation: scale 15s infinite;
+  animation: scale 5s infinite ease-in-out;
   transform-origin: center;
 }
 #certel {
-  animation: action 1s infinite alternate;
+  animation: action 2s infinite alternate;
 }
+#eyes-open {
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#right-eye {
+  transition: all 1s ease-out;
+  transform: scale(1);
+  transform-origin: bottom;
+  transform-box: fill-box;
+  animation-delay: 1s;
+}
+
 @keyframes rotate {
   from {
     transform: rotateZ(0deg);
@@ -31,10 +66,18 @@
 }
 @keyframes scale {
   0% {
+    -webkit-transform: scale(0.9);
     transform: scale(0.8);
   }
-  100% {
+
+  50% {
+    -webkit-transform: scale(1);
     transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.8);
   }
 }
 @keyframes action {
@@ -43,5 +86,22 @@
   }
   100% {
     transform: translateY(-30px);
+  }
+}
+@keyframes eyes-in {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes eyes-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.1);
   }
 }

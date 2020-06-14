@@ -33,7 +33,8 @@ const Header = ({ siteTitle }) => {
             <div className="navbar-start"></div>
             <div className="navbar-end">
               <a className="navbar-item">Home</a>
-              <a className="navbar-item">Documentation</a>
+              <a className="navbar-item">About</a>
+              <a className="navbar-item">Notes</a>
             </div>
           </div>
         </nav>

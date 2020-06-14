@@ -6,10 +6,12 @@ export default function section1() {
       <div class="container">
         <div class="columns">
           <div class="column">
-            <h1 class="title">Section</h1>
+            <h1 class="title">Hi!</h1>
             <h2 class="subtitle">
-              A simple container to divide your page into{" "}
-              <strong>sections</strong>, like the one you're currently reading
+              I'm a web designer based in Aydin, Turkey. I have a passion for
+              web design and love to create for web and mobile devices. It is
+              also a joy for me to read and search new and best technologies for
+              my job.
             </h2>
           </div>
           <div class="column">
