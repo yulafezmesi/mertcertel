@@ -18,7 +18,7 @@ export default function section1() {
                 </h2>
               </div>
               <figure className="image is-128x128 mt-6">
-                <img className="is-rounded" src={Profile} />
+                <img alt="Mert CERTEL" className="is-rounded" src={Profile} />
               </figure>
             </div>
           </div>

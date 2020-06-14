@@ -429,7 +429,7 @@ function Icon() {
             ></path>
           </g>
           <g
-            onMouseLeave={() => cmdShowDown()}
+            onMouseOut={() => cmdShowDown()}
             onMouseOver={() => cmdShowUp()}
             id="certel"
           >
