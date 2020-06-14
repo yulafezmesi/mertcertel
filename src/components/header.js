@@ -8,8 +8,8 @@ const Header = ({ siteTitle }) => {
     <div className="container">
       <header>
         <nav className="navbar " role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="/">
+          <div className="navbar-brand">
+            <a className="navbar-item" href="/">
               <img src="/svg/logo.svg" />
             </a>
             <a

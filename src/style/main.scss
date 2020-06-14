@@ -1,8 +1,15 @@
 @import "command-line.scss";
-.navbar-item {
-  img {
-    max-height: 3rem;
+.navbar {
+  border-bottom: thin solid rgba(0, 0, 0, 0.12);
+  &-item {
+    img {
+      max-height: 3rem;
+    }
   }
+}
+.title {
+  color: #ce3827;
+  font-size: 3rem;
 }
 #techs {
   animation: rotate 10s infinite linear;
