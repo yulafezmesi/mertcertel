@@ -1,9 +1,33 @@
 @import "command-line.scss";
+@import "grid.scss";
+body {
+  background-color: #fafafa;
+}
+
 .navbar {
   border-bottom: thin solid rgba(0, 0, 0, 0.12);
+  background: transparent;
 }
-.title {
-  color: #ce3827;
+.card {
+  border-radius: 20px;
+  transition: transform 0.2s linear;
+  background: transparent;
+  border: 0.6px solid #dadce0;
+  svg {
+    border: 0.6px solid #dadce0;
+    border-radius: 20px;
+  }
+  &:hover {
+    box-shadow: 0 3rem 3rem -1.25rem rgba(10, 10, 10, 0.1);
+    transform: translateY(-0.5rem);
+    cursor: pointer;
+    svg {
+      color: #082d52;
+    }
+  }
+}
+.title.color-title {
+  color: #082d52;
 }
 #techs {
   animation: rotate 10s infinite linear;
