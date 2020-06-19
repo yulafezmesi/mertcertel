@@ -1,6 +1,5 @@
 import React from "react"
 import Certel from "./svg/certel"
-import Profile from "../images/profile.jpg"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 const Section1 = () => {
@@ -31,7 +30,6 @@ const Section1 = () => {
                 </h2>
               </div>
               <figure className="is-150x150 mt-6">
-                {/* <img alt="Mert CERTEL" src={Profile} /> */}
                 <Img
                   fixed={data.file.childImageSharp.fixed}
                   alt="Gatsby Docs are awesome"
