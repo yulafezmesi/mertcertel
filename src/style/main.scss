@@ -1,12 +1,60 @@
 @import "command-line.scss";
 @import "grid.scss";
+@import "./font.css";
 body {
   background-color: #fafafa;
+  font-family: "Quicksand";
+  font-weight: 500;
 }
-
+.mb-sm-1 {
+  margin-bottom: 0.75rem !important;
+  @media (min-width: 992px) {
+    margin-bottom: 0 !important;
+  }
+}
+.is-150x150 {
+  width: 150px;
+  height: 150px;
+  img {
+    border-radius: 50%;
+  }
+}
 .navbar {
   border-bottom: thin solid rgba(0, 0, 0, 0.12);
   background: transparent;
+}
+.faid-in {
+  animation-name: baboli;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.14, 0.71, 0.29, 0.86);
+  transform-origin: center center;
+}
+.box-shadow {
+  &-red {
+    transition-duration: 0.2s;
+    transition-property: box-shadow, color;
+    box-shadow: 0 10px 0 0 rgba(255, 56, 96, 0),
+      inset 0 -0.125em rgba(255, 56, 96, 0.2);
+    color: currentColor;
+    &:hover {
+      color: #ef3e25;
+      box-shadow: 0 1px 0 4px rgba(255, 56, 96, 0.1),
+        inset 0 -1.375em 0 rgba(255, 56, 96, 0.1);
+    }
+  }
+
+  &-green {
+    transition-duration: 0.2s;
+    transition-property: box-shadow, color;
+    box-shadow: 0 10px 0 0 rgba(0, 209, 178, 0),
+      inset 0 -0.125em rgba(0, 209, 178, 0.2);
+    &:hover {
+      color: #09ae96;
+      box-shadow: 0 1px 0 4px rgba(0, 209, 178, 0.1),
+        inset 0 -1.375em 0 rgba(0, 209, 178, 0.1);
+    }
+  }
 }
 .card {
   border-radius: 20px;
@@ -28,6 +76,45 @@ body {
 }
 .title.color-title {
   color: #082d52;
+}
+.say-hello {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  &:after {
+    content: "👋";
+    font-size: 1rem;
+    position: absolute;
+    transform-origin: center;
+    left: 0;
+    top: -0.75rem;
+    z-index: -1;
+  }
+  &:hover {
+    &:after {
+      animation-name: handShake;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+
+      animation-fill-mode: both;
+      // animation-timing-function: cubic-bezier(0.14, 0.71, 0.29, 0.86);
+      transform-origin: bottom center;
+    }
+  }
+}
+@keyframes handShake {
+  0% {
+    transform: rotate(20deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  66% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
 }
 #techs {
   animation: rotate 10s infinite linear;
@@ -128,5 +215,56 @@ body {
   }
   to {
     transform: scale(0.1);
+  }
+}
+@keyframes baboli {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portfolio-card {
+  &-img {
+    position: relative;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+      0 0px 0 1px rgba(10, 10, 10, 0.02);
+    transition: transform 0.3s ease-in-out;
+    width: auto;
+    &:hover,
+    &:active {
+      transform: scale(0.97, 0.97);
+      .portfolio-card-img-bottom {
+        height: 50% !important;
+      }
+    }
+
+    &-bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      opacity: 0.7;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease-in-out;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      color: white;
+    }
+    &-overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      opacity: 0.7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

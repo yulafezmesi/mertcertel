@@ -6,7 +6,7 @@ import Section2 from "../components/section-2"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Frontend Developer" />
     <Section1 />
     <Section2 />
   </Layout>

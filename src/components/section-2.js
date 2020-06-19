@@ -4,7 +4,7 @@ import * as Icon from "./svg/icons"
 const Section2 = () => {
   return (
     <section className="section">
-      <div className="container">
+      <div className="container ">
         <h1 className="title color-title has-text-centered mb-6">
           What exactly can I do?
         </h1>

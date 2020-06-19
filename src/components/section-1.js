@@ -8,7 +8,7 @@ export default function section1() {
         <div class="columns">
           <div class="column">
             <div className="columns is-mobile is-multiline  is-centered">
-              <div>
+              <div className="faid-in">
                 <h1 class="title">Hi!</h1>
                 <h2 class="subtitle">
                   I'm a <strong>front-end developer</strong> based in Aydin,
@@ -17,15 +17,13 @@ export default function section1() {
                   search new and best technologies for my job.
                 </h2>
               </div>
-              <figure className="image is-128x128 mt-6">
-                <img alt="Mert CERTEL" className="is-rounded" src={Profile} />
+              <figure className="is-150x150 mt-6">
+                <img alt="Mert CERTEL" src={Profile} />
               </figure>
             </div>
           </div>
           <div class="column">
-            <Certel>
-              <p>selam</p>
-            </Certel>
+            <Certel />
           </div>
         </div>
       </div>

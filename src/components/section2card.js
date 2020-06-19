@@ -2,7 +2,7 @@ import React from "react"
 
 export default function section2card({ Icon, content, title }) {
   return (
-    <div className="column ">
+    <div className="column mb-sm-1	 ">
       <div class="columns is-multiline card pr-3 ">
         <div class="card-content">
           <div className="columns mr-0 is-mobile">
