@@ -1,7 +1,20 @@
 import React from "react"
 import Certel from "./svg/certel"
 import Profile from "../images/profile.jpg"
-export default function section1() {
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+const Section1 = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "profile.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150, quality: 100, webpQuality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
   return (
     <section class="section">
       <div class="container">
@@ -18,7 +31,11 @@ export default function section1() {
                 </h2>
               </div>
               <figure className="is-150x150 mt-6">
-                <img alt="Mert CERTEL" src={Profile} />
+                {/* <img alt="Mert CERTEL" src={Profile} /> */}
+                <Img
+                  fixed={data.file.childImageSharp.fixed}
+                  alt="Gatsby Docs are awesome"
+                />
               </figure>
             </div>
           </div>
@@ -30,3 +47,4 @@ export default function section1() {
     </section>
   )
 }
+export default Section1
