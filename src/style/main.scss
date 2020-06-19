@@ -30,6 +30,16 @@ body {
   animation-timing-function: cubic-bezier(0.14, 0.71, 0.29, 0.86);
   transform-origin: center center;
 }
+.footer-social {
+  svg {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 15px;
+  }
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
 .box-shadow {
   &-red {
     transition-duration: 0.2s;
