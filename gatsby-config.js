@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Mert CERTEL`,
     description: `Mert Certel`,
+    siteUrl: "https://www.mertcertel.com",
     author: `@mcertel`,
     keywords:
       "freelance, designer, developer, html, css, sass, javascript, react, vue, gridsome, gatsby",
@@ -16,6 +17,8 @@ module.exports = {
         // other options
       },
     },
+    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-robots-txt",
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
