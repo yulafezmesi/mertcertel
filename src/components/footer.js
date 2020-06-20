@@ -1,5 +1,5 @@
 import React from "react"
-import { Gitlab, Twitter, LinkedIn } from "./social"
+import { Gitlab, Twitter, LinkedIn, Telegram } from "./social"
 function footer() {
   return (
     <footer className="footer">
@@ -28,6 +28,9 @@ function footer() {
             </a>{" "}
             <a href="https://twitter.com/certel1st" target="_blank">
               <Twitter />
+            </a>
+            <a href="https://t.me/mcertel" target="_blank">
+              <Telegram />
             </a>
           </div>
         </div>

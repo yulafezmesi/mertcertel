@@ -1,6 +1,6 @@
 import React from "react"
 
-export  function Twitter() {
+export function Twitter() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ export  function Twitter() {
   )
 }
 
-export  function Gitlab() {
+export function Gitlab() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ export  function Gitlab() {
     </svg>
   )
 }
-export  function LinkedIn() {
+export function LinkedIn() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -75,6 +75,35 @@ export  function LinkedIn() {
       viewBox="0 0 24 24"
     >
       <path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"></path>
+    </svg>
+  )
+}
+export function Telegram() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+      <defs>
+        <linearGradient id="a" x1="0.667" x2="0.417" y1="0.167" y2="0.75">
+          <stop offset="0" stopColor="#37aee2"></stop>
+          <stop offset="1" stopColor="#1e96c8"></stop>
+        </linearGradient>
+        <linearGradient id="b" x1="0.66" x2="0.851" y1="0.437" y2="0.802">
+          <stop offset="0" stopColor="#eff7fc"></stop>
+          <stop offset="1" stopColor="#fff"></stop>
+        </linearGradient>
+      </defs>
+      <circle cx="120" cy="120" r="120" fill="url(#a)"></circle>
+      <path
+        fill="#c8daea"
+        d="M98 175c-3.888 0-3.227-1.468-4.568-5.17L82 132.207 170 80"
+      ></path>
+      <path
+        fill="#a9c9dd"
+        d="M98 175c3 0 4.325-1.372 6-3l16-15.558-19.958-12.035"
+      ></path>
+      <path
+        fill="url(#b)"
+        d="M100.04 144.41l48.36 35.729c5.519 3.045 9.501 1.468 10.876-5.123l19.685-92.763c2.015-8.08-3.08-11.746-8.36-9.349l-115.59 44.571c-7.89 3.165-7.843 7.567-1.438 9.528l29.663 9.259 68.673-43.325c3.242-1.966 6.218-.91 3.776 1.258"
+      ></path>
     </svg>
   )
 }
