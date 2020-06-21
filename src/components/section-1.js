@@ -23,7 +23,7 @@ const Section1 = () => {
               <div className="faid-in">
                 <h1 class="title">Hi!</h1>
                 <h2 class="subtitle">
-                  I'm a <strong>front-end developer</strong> based in Aydin,
+                  I'm a <strong>front-end developer</strong> based in Aydın,
                   Turkey. I have a passion for web design and love to create for
                   web and mobile devices. It is also a joy for me to read and
                   search new and best technologies for my job.

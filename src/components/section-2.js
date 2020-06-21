@@ -12,17 +12,17 @@ const Section2 = () => {
           <Card
             title="Idea"
             Icon={Icon.Idea}
-            content="I can building interactive design and useful products for both web and mobile platforms."
+            content="I can build interactive design and useful products for both web and mobile platforms."
           />
           <Card
-            title="Simplicity"
+            title="Design"
             Icon={Icon.Pen}
-            content="Design, simplicity represents thoroughness, beauty, and understanding."
+            content="Simplicity represents thoroughness, beauty, and understanding."
           />
           <Card
             title="Connectivity"
             Icon={Icon.Chain}
-            content="I can work independently with a team. I run my freelance business with honesty."
+            content="I can work independently or with a team. I run my freelance business with integrity."
           />
         </div>
       </div>
