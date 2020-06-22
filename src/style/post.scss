@@ -1,0 +1,35 @@
+.post-tags {
+  display: flex;
+  width: 100%;
+  max-width: 65%;
+  justify-content: space-around;
+  padding: 0 5px 0 5px;
+  &-figure {
+    position: relative;
+    &:hover {
+      .post-tags-figure-tooltip {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    &-tooltip {
+      position: absolute;
+      bottom: -33px;
+      transform: scale(0);
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      transform-origin: center center;
+      width: auto;
+      left: -33px;
+      background: rgba(97, 97, 97, 0.9);
+      color: #fff;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 22px;
+      display: inline-block;
+      padding: 5px 16px;
+      text-transform: none;
+      pointer-events: none;
+    }
+  }
+}

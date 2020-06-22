@@ -32,7 +32,6 @@ const Section1 = () => {
               <figure className="is-150x150 mt-6">
                 <Img
                   fixed={data.file.childImageSharp.fixed}
-                  alt="Gatsby Docs are awesome"
                 />
               </figure>
             </div>

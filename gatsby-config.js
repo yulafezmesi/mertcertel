@@ -22,6 +22,18 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: "http://localhost:1337",
+        contentTypes: [
+          // List of the Content Types you want to be able to request from Gatsby.
+          "Posts",
+          "Tags",
+        ],
+        queryLimit: 1000,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -50,4 +62,4 @@ module.exports = {
       },
     },
   ],
-}
+};

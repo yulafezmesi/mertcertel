@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
 export default function section2card({ Icon, content, title }) {
   return (
     <div className="column mb-sm-1	 ">
-      <div class="columns is-multiline card pr-3 ">
+      <div class="columns is-multiline card main-card pr-3 ">
         <div class="card-content">
           <div className="columns mr-0 is-mobile">
             <div className="column d-flex justify-content-center ">
@@ -22,5 +22,5 @@ export default function section2card({ Icon, content, title }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
