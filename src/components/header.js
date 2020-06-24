@@ -1,16 +1,16 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
 const Header = ({ siteTitle }) => {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
   return (
     <div className="container">
       <header>
         <nav className="navbar " role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
             <a className="navbar-item" href="/">
-              <img src="/svg/logo.svg" />
+              <img alt="Logo" src="/svg/logo.svg" />
             </a>
             <a
               role="button"
@@ -40,15 +40,15 @@ const Header = ({ siteTitle }) => {
         </nav>
       </header>
     </div>
-  )
-}
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;

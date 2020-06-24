@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import PostCard from "../components/posts/postcard";
@@ -8,11 +7,13 @@ import "../style/post.scss";
 const PostPage = ({ data }) => (
   <Layout>
     <SEO title="Posts" />
-    <div className="container d-flex flex-column justify-content-center align-items-center mt-6">
-      {data.allStrapiPosts.nodes.map((item) => (
-        <PostCard key={item.id} item={item} />
-      ))}
-    </div>
+    <section className="section">
+      <div className="container d-flex flex-column justify-content-center align-items-center">
+        {data.allStrapiPosts.nodes.map((item) => (
+          <PostCard key={item.id} item={item} />
+        ))}
+      </div>
+    </section>
   </Layout>
 );
 
@@ -30,7 +31,7 @@ export const query = graphql`
           image {
             id
             childImageSharp {
-              fixed(width: 22, height: 20) {
+              fixed(width: 25, height: 25) {
                 ...GatsbyImageSharpFixed
               }
             }

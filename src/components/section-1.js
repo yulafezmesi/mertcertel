@@ -1,7 +1,7 @@
-import React from "react"
-import Certel from "./svg/certel"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import Certel from "./svg/certel";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 const Section1 = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -13,7 +13,7 @@ const Section1 = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <section class="section">
       <div class="container">
@@ -32,6 +32,7 @@ const Section1 = () => {
               <figure className="is-150x150 mt-6">
                 <Img
                   fixed={data.file.childImageSharp.fixed}
+                  alt="Mert CERTEL"
                 />
               </figure>
             </div>
@@ -42,6 +43,6 @@ const Section1 = () => {
         </div>
       </div>
     </section>
-  )
-}
-export default Section1
+  );
+};
+export default Section1;

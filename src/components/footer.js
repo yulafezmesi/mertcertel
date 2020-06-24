@@ -1,10 +1,10 @@
-import React from "react"
-import { Gitlab, Twitter, LinkedIn, Telegram } from "./social"
+import React from "react";
+import { Gitlab, Twitter, LinkedIn, Telegram } from "./social";
 function footer() {
   return (
     <footer className="footer">
       <div className="colums">
-        <div class="column content has-text-centered">
+        <div className="column content has-text-centered">
           <p className="is-size-4 ">
             You can say{" "}
             <a
@@ -36,7 +36,7 @@ function footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
-export default footer
+export default footer;

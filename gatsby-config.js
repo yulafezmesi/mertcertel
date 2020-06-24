@@ -17,6 +17,9 @@ module.exports = {
         // other options
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+    },
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-robots-txt",
     `gatsby-plugin-sass`,
