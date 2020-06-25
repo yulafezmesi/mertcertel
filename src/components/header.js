@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "gatsby";
 import PropTypes from "prop-types";
 
 const Header = ({ siteTitle }) => {
@@ -9,9 +9,9 @@ const Header = ({ siteTitle }) => {
       <header>
         <nav className="navbar " role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <a className="navbar-item" href="/">
+            <Link className="navbar-item" to="/">
               <img alt="Logo" src="/svg/logo.svg" />
-            </a>
+            </Link>
             <a
               role="button"
               onClick={() => setActive(!active)}
@@ -32,9 +32,13 @@ const Header = ({ siteTitle }) => {
           <div className={active ? "navbar-menu is-active" : "navbar-menu"}>
             <div className="navbar-start"></div>
             <div className="navbar-end">
-              <a className="navbar-item">Home</a>
-              {/* <a className="navbar-item">About</a>
-              <a className="navbar-item">Notes</a> */}
+              <Link to="/" className="navbar-item">
+                Home
+              </Link>
+              <Link to="/post" className="navbar-item">
+                Notes
+              </Link>
+              {/* <a className="navbar-item">About</a> */}
             </div>
           </div>
         </nav>
