@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "posts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "url_id": {
+      "type": "string",
+      "private": false,
+      "required": true,
+      "unique": true
+    },
+    "tumblr_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "tags": {
+      "collection": "tags",
+      "via": "posts",
+      "dominant": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

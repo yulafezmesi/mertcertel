@@ -39,7 +39,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     `
   ).then((result) => {
-    console.log(result);
     // Create pages for each article.
     result.data.allStrapiPosts.edges.forEach(({ node }) => {
       createPage({
