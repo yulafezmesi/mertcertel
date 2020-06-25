@@ -18,7 +18,7 @@ export default function PostDetails({ data }) {
   return (
     <Layout>
       <SEO keywords={allRelatedTagNames()} title={data.strapiPosts.title} />
-      <section className="section">
+      <section className="section pl-0 pr-0">
         <div className="container">
           <div className="columns">
             <div className="column is-8 article">

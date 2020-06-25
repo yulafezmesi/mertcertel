@@ -7,7 +7,7 @@ import "../style/post.scss";
 const PostPage = ({ data }) => (
   <Layout>
     <SEO title="Posts" />
-    <section className="section">
+    <section className="section pl-0 pr-0">
       <div className="container d-flex flex-column justify-content-center align-items-center">
         {data.allStrapiPosts.nodes.map((item) => (
           <PostCard key={item.id} item={item} />
