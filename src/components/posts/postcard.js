@@ -6,7 +6,7 @@ import Tag from "./tags";
 import Helper from "../../helpers/index";
 const postcard = ({ item }) => {
   return (
-    <div className="column is-7 article ">
+    <div className="column is-7 article post-card">
       <div class="card">
         <div class="card-content">
           <h1 className="title">

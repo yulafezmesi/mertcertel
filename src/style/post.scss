@@ -12,12 +12,16 @@ h3 {
     font-size: 17px !important;
   }
 }
-
-.card-content {
+.post-card {
   p {
     display: inline;
+  }
+}
+.card-content {
+  p {
     margin-bottom: 20px;
   }
+
   h1 {
     a {
       display: inline-block;

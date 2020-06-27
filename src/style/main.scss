@@ -1,6 +1,9 @@
 @import "command-line.scss";
 @import "grid.scss";
 @import "./font.css";
+* {
+  scroll-behavior: smooth !important;
+}
 body {
   background-color: #fafafa;
   font-family: "Quicksand";
@@ -22,6 +25,10 @@ body {
 .navbar {
   border-bottom: thin solid rgba(0, 0, 0, 0.12);
   background: transparent;
+}
+.navbar-menu {
+  background-color: inherit;
+  text-align: center;
 }
 .faid-in {
   animation-name: baboli;
@@ -129,15 +136,12 @@ body {
 #techs {
   animation: rotate 10s infinite linear;
   transform-origin: center;
-
-  
 }
 #techs > * {
   animation: inherit;
   animation-direction: reverse;
   transform-origin: center;
   transform-box: fill-box;
-  
 }
 #certel {
   &:hover {
