@@ -19,7 +19,7 @@ const PostPage = ({ data }) => (
 
 export const query = graphql`
   {
-    allStrapiPosts (sort:{order:DESC,fields:created_at}) {
+    allStrapiPosts(sort: { order: DESC, fields: created_at }) {
       nodes {
         title
         url_id

@@ -5,6 +5,7 @@ import Tag from "./tags";
 
 import Helper from "../../helpers/index";
 const postcard = ({ item }) => {
+  console.log(item);
   return (
     <div className="column is-7 article post-card">
       <div class="card">
