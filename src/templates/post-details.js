@@ -56,7 +56,7 @@ export default function PostDetails({ data }) {
                   <p className="card-header-title">İlişkili Yazılar</p>
                   <div className="d-flex align-items-center ml-3">
                     {data.strapiPosts.tags.map((tag) => (
-                      <Tag tag={tag} />
+                      <Tag key={tag.name} tag={tag} />
                     ))}
                   </div>
                 </header>

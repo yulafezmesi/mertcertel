@@ -41,12 +41,11 @@ const RelatedPosts = ({ tags, title }) => {
               relatedPostsArray.push(post);
           });
         });
-        console.log(relatedPostsArray);
         return (
           <>
             {relatedPostsArray.length ? (
               relatedPostsArray.map((item) => (
-                <div className="d-flex px-2 py-2">
+                <div key={item.id } className="d-flex px-2 py-2">
                   <div>
                     <figcaption>
                       <Img

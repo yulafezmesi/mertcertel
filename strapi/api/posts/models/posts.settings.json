@@ -28,8 +28,8 @@
       "required": false
     },
     "tags": {
-      "collection": "tags",
       "via": "posts",
+      "collection": "tags",
       "dominant": true
     },
     "title": {

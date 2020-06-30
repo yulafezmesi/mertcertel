@@ -15,14 +15,14 @@ const Section1 = () => {
     }
   `);
   return (
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
+    <section className="section">
+      <div className="container">
+        <div className="columns">
+          <div className="column">
             <div className="columns is-mobile is-multiline  is-centered">
               <div className="faid-in">
-                <h1 class="title">Hi!</h1>
-                <h2 class="subtitle">
+                <h1 className="title">Hi!</h1>
+                <h2 className="subtitle">
                   I'm a <strong>front-end developer</strong> based in Aydın,
                   Turkey. I have a passion for web design and love to create for
                   web and mobile devices. It is also a joy for me to read and
@@ -37,7 +37,7 @@ const Section1 = () => {
               </figure>
             </div>
           </div>
-          <div class="column">
+          <div className="column">
             <Certel />
           </div>
         </div>

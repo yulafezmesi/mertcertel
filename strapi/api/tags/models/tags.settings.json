@@ -21,11 +21,11 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "posts": {
-      "via": "tags",
-      "collection": "posts"
+      "collection": "posts",
+      "via": "tags"
     }
   }
 }
