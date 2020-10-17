@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, Img } from "gatsby";
 import ReactMarkdown from "react-markdown";
 import Tag from "./tags";
-
 import Helper from "../../helpers/index";
 const postcard = ({ item }) => {
   return (
@@ -12,6 +11,15 @@ const postcard = ({ item }) => {
           <h1 className="title">
             <Link to={`post/${item.url_id}`}>{item.title}</Link>
           </h1>
+          {/* {item.tumblr_img ? (
+            <Link to={`post/${item.url_id}`}>
+              <Img
+                className="mb-3"
+                fluid={item.tumblr_img.childImageSharp.fluid}
+                alt={item.title}
+              />
+            </Link>
+          ) : null} */}
           <ReactMarkdown source={item.content.substring(0, 350)} />
           <span>
             <Link to={`post/${item.url_id}`}>..devamını okuyayım</Link>

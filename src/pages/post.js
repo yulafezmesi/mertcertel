@@ -26,6 +26,13 @@ export const query = graphql`
         strapiId
         content
         created_at
+        tumblr_img {
+          childImageSharp {
+            fluid(maxWidth: 10000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         tags {
           id
           image {
