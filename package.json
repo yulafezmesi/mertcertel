@@ -19,7 +19,7 @@
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-source-strapi": "0.0.12",
     "gatsby-transformer-excel": "^2.4.4",
-    "gatsby-transformer-remark": "^2.8.19",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.3",
     "node-sass": "^4.14.1",
     "prismjs": "^1.20.0",
